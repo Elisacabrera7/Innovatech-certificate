@@ -10,15 +10,15 @@
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<image>
 				<reportElement x="20" y="10" width="750" height="545" uuid="34925338-7413-4928-89b6-75282443ebdb"/>
-				<imageExpression><![CDATA["Fondowithdrawal.jpeg"]]></imageExpression>
+				<imageExpression><![CDATA["https://storage.googleapis.com/images_tradding_prod/Fondowithdrawal.jpeg"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="30" y="10" width="180" height="130" uuid="1799e853-403e-4582-9a46-50ab178d14f3"/>
-				<imageExpression><![CDATA["5.png"]]></imageExpression>
+				<imageExpression><![CDATA["https://storage.googleapis.com/images_tradding_prod/5.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="550" y="390" width="130" height="101" uuid="b0e33f85-71e0-423b-9299-b688003fc969"/>
-				<imageExpression><![CDATA["4.png"]]></imageExpression>
+				<imageExpression><![CDATA["https://storage.googleapis.com/images_tradding_prod/4.png"]]></imageExpression>
 			</image>
 		</band>
 	</background>

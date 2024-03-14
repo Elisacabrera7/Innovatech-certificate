@@ -10,23 +10,23 @@
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<image hAlign="Center" vAlign="Middle">
 				<reportElement x="20" y="20" width="520" height="715" uuid="4adeab2a-3b29-464f-a120-0f1a4aba2945"/>
-				<imageExpression><![CDATA["Fonofibanced.jpeg"]]></imageExpression>
+				<imageExpression><![CDATA["https://storage.googleapis.com/images_tradding_prod/Fonofibanced.jpeg"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="230" y="50" width="110" height="100" uuid="75c46322-65af-4696-84a4-908f32b0fb56"/>
-				<imageExpression><![CDATA["5.png"]]></imageExpression>
+				<imageExpression><![CDATA["https://storage.googleapis.com/images_tradding_prod/5.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="216" y="590" width="195" height="129" uuid="40fa8a8c-246b-4356-9ec8-7692ba3986d4"/>
-				<imageExpression><![CDATA["2.png"]]></imageExpression>
+				<imageExpression><![CDATA["https://storage.googleapis.com/images_tradding_prod/2.png"]]></imageExpression>
 			</image>
 			<image hAlign="Center">
 				<reportElement mode="Transparent" x="223" y="500" width="124" height="99" uuid="fc481f39-0d40-4336-9fef-8b5daddf68a8"/>
-				<imageExpression><![CDATA["4.png"]]></imageExpression>
+				<imageExpression><![CDATA["https://storage.googleapis.com/images_tradding_prod/4.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement mode="Transparent" x="160" y="140" width="250" height="290" uuid="d68bc88d-56ab-4f36-80f4-40475b201f78"/>
-				<imageExpression><![CDATA["Logoworld.png"]]></imageExpression>
+				<imageExpression><![CDATA["https://storage.googleapis.com/images_tradding_prod/Logoworld.png"]]></imageExpression>
 			</image>
 		</band>
 	</background>
@@ -71,7 +71,7 @@
 			<staticText>
 				<reportElement x="130" y="150" width="300" height="39" uuid="d828add2-e686-4b5f-ac8a-581ec639c790"/>
 				<textElement textAlignment="Center">
-					<font fontName="Arial Narrow" size="14" isBold="false"/>
+					<font size="14" isBold="false"/>
 				</textElement>
 				<text><![CDATA[In recognition of successfully passing the 
 Advanced Trader Program by ]]></text>
