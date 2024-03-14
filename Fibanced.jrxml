@@ -2,6 +2,7 @@
 <!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Fibanced" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e2e21bf0-d219-4121-a0d3-278dfa4de112">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="TRADER_NAME" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -28,6 +29,13 @@
 				<reportElement mode="Transparent" x="160" y="140" width="250" height="290" uuid="d68bc88d-56ab-4f36-80f4-40475b201f78"/>
 				<imageExpression><![CDATA["https://storage.googleapis.com/images_tradding_prod/Logoworld.png"]]></imageExpression>
 			</image>
+			<textField>
+				<reportElement x="100" y="390" width="350" height="30" uuid="f9977f1b-cf3b-41ec-8121-21a339e06a53"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TRADER_NAME}]]></textFieldExpression>
+			</textField>
 		</band>
 	</background>
 	<title>
@@ -84,15 +92,22 @@ Advanced Trader Program by ]]></text>
 				<text><![CDATA[FUNDED TRADING ACCOUNT]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="252" y="201" width="51" height="15" uuid="97f28c77-8cb7-4a7a-b1c7-91aa945f5a7c"/>
+				<reportElement x="252" y="206" width="51" height="15" uuid="97f28c77-8cb7-4a7a-b1c7-91aa945f5a7c"/>
 				<textElement textAlignment="Center">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[DATE]]></text>
 			</staticText>
 			<line>
-				<reportElement x="240" y="200" width="81" height="1" uuid="226c20e3-624b-4708-bed8-695fc2c15da1"/>
+				<reportElement x="240" y="205" width="81" height="1" uuid="226c20e3-624b-4708-bed8-695fc2c15da1"/>
 			</line>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="187" y="190" width="180" height="30" uuid="f2d15ee5-1387-415f-b456-1ed6660bd628"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
 		</band>
 	</detail>
 	<columnFooter>

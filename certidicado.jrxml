@@ -11,6 +11,7 @@
 	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="TRADER_NAME" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -98,6 +99,20 @@ DURING THE TRADING PERIOD, THE STRATEGY'S PROFITABILITY WAS ESTABLISHED, AND THE
 					<pen lineWidth="2.0"/>
 				</graphicElement>
 			</line>
+			<textField>
+				<reportElement isPrintRepeatedValues="false" mode="Transparent" x="180" y="300" width="600" height="30" uuid="50232110-3e38-4a67-895e-15c0fb5d5902"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22"/>
+					<paragraph lineSpacing="Single" lineSpacingSize="1.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TRADER_NAME}]]></textFieldExpression>
+			</textField>
 		</band>
 	</title>
 	<pageFooter>
@@ -112,6 +127,11 @@ DURING THE TRADING PERIOD, THE STRATEGY'S PROFITABILITY WAS ESTABLISHED, AND THE
 			<line>
 				<reportElement x="300" y="70" width="130" height="1" uuid="af4a9b8d-1ba8-4852-a352-0d1c7dd0c4b7"/>
 			</line>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="300" y="50" width="130" height="30" uuid="efdc2935-6a9a-4316-8d6f-0618c815fb5f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
 		</band>
 	</pageFooter>
 </jasperReport>
